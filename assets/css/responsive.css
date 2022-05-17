@@ -1,0 +1,248 @@
+/* ===mobie and tablet */
+@media (max-width: 1113px) {
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        height: 1380px;
+    }
+    .header__img{
+        width: 100%;
+        top: 0;
+        height: 1380px;
+    }
+    .header-text{
+        padding-top: 67px;
+    }
+    .header-text__select-container{
+        width: 100%;
+    }
+    .header-text__select{
+        width: 100%;
+    }
+    .header-text__category-list{
+        flex-direction: column;
+    }
+    .header-text__category-item + .header-text__category-item{
+        margin-left: 20px;
+    }
+    .header-text__category-item{
+        width: 95%;
+        margin: 0 20px 30px 20px;
+    }
+    .slidebar{
+        display: none;
+    }
+    .navbar__logo{
+        margin-bottom: 10px;
+    }
+    #navbar_checkbox-mobile:checked ~ .navbar__list {
+        transform: translateX(0);
+    }
+    .navbar__list{
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        flex-direction: column;
+        overflow-y: auto;
+        background-color: rgb(85, 85, 85);
+        z-index: 10;
+        align-items: flex-start;
+        padding: 15px;
+        transform: translateX(100%);    
+        transition: transform linear 0.5s;
+    }
+    .slidebar__close-icon{
+        padding: 22px;
+    }
+    .navbar__link{
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding: 30px 15px 0 15px
+    }
+    .navbar__subnav{
+        display: flex;
+        flex-direction: column;
+        background-color: unset;
+        box-shadow: unset;
+        top: 0;
+        position: unset;
+    }
+    .navbar__subnav--child::before{
+        display: none;
+    }
+    .navbar__subnav-item{
+        border-bottom: unset;
+        width: 100%;
+    }
+    .navbar__subnav-item:hover{
+        background-color: unset;
+    }
+    .navbar__subnav--child > .navbar__subnav-item {
+        margin-left: 20px;
+    }
+    .navbar__subnav-link{
+        color: var(--white-color);
+    }
+    .navbar__link-book{
+        background-color: unset;
+        margin-left: 0;
+    }
+    .navbar__tourpackage-icon{
+        display: none;
+    }
+    .container{
+        top: 1325px;
+    }
+    .best-beach-text{
+        margin: 0 10px;
+    }
+    .best-beach{
+        margin-left: 0;
+        width: 100%;
+    }
+    .best-beach__slideshow,
+    .best-beach__slide-wrap{
+        width: 646px;
+    }
+    .time-sale__list,
+    .time-sale__item{
+        width: 100%;
+    }
+    .best-beach__btn{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .vehicle{
+        padding-bottom: 38px;
+    }
+    .vehicle__container{
+        margin: 0 10px 50px 10px;
+    }
+    .discover__container{
+        flex-direction: column;
+    }
+    .place__body-btn{
+        display: block;
+    }
+    .footer-background{
+        height: 1559px;
+    }
+    .footer__header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 90px 26px 60px 26px;
+    }
+    .footer__header-form{
+        width: 100%;
+    }
+    .footer__header-form form{
+        display: flex;
+        margin-top: 30px;
+    }
+    .footer__header-input{
+        flex: 1;
+        width: 100%;
+    }
+    .footer__header-input-btn{
+        padding: 12px 55px;
+    }
+    .footer__copyright,
+    .footer__info-list{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__info-item {
+        margin-bottom: 40px;
+    }
+    .footer__copyright-text{
+        margin: auto;
+    }
+    .footer__social{
+        margin-bottom: 40px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1113px) {
+    .view-package__btn{
+        margin-left: 149px;
+    }
+    .best-beach__slideshow,
+    .best-beach__slide-wrap{
+        width: 646px;
+        margin: auto;
+    }
+    .best-beach__slide-wrap{
+        -webkit-animation: slideTablet 14s ease infinite;
+    }
+    @-webkit-keyframes slideTablet {
+        30% {margin-left: 0px;}
+        40% {margin-left: -646px;}
+        60% {margin-left: -646px;}
+        70% {margin-left: -1292px;}
+        100% {margin-left: -1292px;}
+    }
+    
+}
+/* mobile */
+@media (max-width: 739px) {
+    .navbar{
+        padding: 20px;
+    }
+    .view-package__container{
+        padding-bottom: 182px;
+    }
+    .view-package__content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .view-package__btn{
+        margin-left: 0;
+        display: block;
+        margin-top: 46px;
+    }
+    .time-sale__item {
+        padding: 20px;
+    }
+    .footer__header-form form{
+        flex-direction: column;
+    }
+    .footer__header-input-btn{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .best-beach__slideshow,
+    .best-beach__slide-wrap{
+        width: 300px;
+        margin: auto;
+    }
+    .best-beach__slide-wrap{
+        -webkit-animation: slideMobile 14s ease infinite;
+    }
+    @-webkit-keyframes slideMobile {
+        30% {margin-left: 0px;}
+        40% {margin-left: -300px;}
+        60% {margin-left: -300px;}
+        70% {margin-left: -600px;}
+        100% {margin-left: -600px;}
+    }
+    .time-sale{
+        transform: translateY(0);
+        margin-bottom: 50px;
+    }
+    .time-sale__item{
+        border-bottom: solid 1px #f1f1f1;
+    }
+    .time-sale__list{
+        flex-direction: column;
+    }
+}
+/* ===PC */
+@media (min-width: 1114px) {
+    .hide-on-pc{
+        display: none;
+    }
+}
